@@ -1,0 +1,20 @@
+The title of your Little Picture / data visualisation: 
+Relative change in urban and tree-covered areas (1992-2015)
+
+Description of visualisation (max 250 words):
+The graphic visualizes the relative change in urban (upper triangle) and tree-covered areas (lower triangle) between 1992 and 2015 per country in relation to its size as a global tile grid map. The lighter the color the higher the change; the direction of the triangles hereby indicates the overall trend with triangles pointing upwards indicating an increase and those pointing downwards encoding a decrease (rotor-like symbols indicate no change). Tree-covered areas are defined as all land cover classes that feature any kind of trees, except cropland. While the relative change in urban areas is never negative, the patterns of change in tree-covered areas differ a lot with 114 countries experiencing a decrease and 57 an increase.
+
+Data Upload - Title:
+Relative change in urban and tree-covered areas (1992-2015)
+
+Data Upload - Comment:
+Data preparation and helpful input by Marco Sciaini; a version with country codes is provided in the GitHub repository as well
+
+A URL where we can access and view your visualisation (as applicable):
+https://github.com/z3tt/esa-little-picture
+
+Provide a list ALL of the datasets you have used to generate your Little Picture / data visualisation:
+https://catalogue.ceda.ac.uk/uuid/b382ebe6679d44b8b0e68ea4ef4b701c via https://github.com/littlepictures/datasets/tree/main/lc-1
+
+Your method / approach:
+The data processing, exploration, and visualization were done in R. We analyzed different variables including vegetated areas more generally, cropland, ice extent, water bodies, and more. In the end, we settled on urban growth and tree cover and decided to include all land cover classes that feature trees but to exclude shrub- and grasslands. The final idea was to include a high level of detail (trends and intensity of change of two variables for 167 countries) while satisfying the idea of an artistic, colorful picture. The main graphic was generated with the ggplot2 library with the help of the geofacet library. The tile grid map is a custom geofacet of the world that is more compact to make it work on a square. The minimal legend was added in Figma. The main contribution does not feature any text to keep the focus on the artistic, geometrical visualization of the data. 
